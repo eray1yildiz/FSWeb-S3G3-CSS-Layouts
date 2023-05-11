@@ -19,7 +19,7 @@ nav a {
   padding: 2% 3%;
 }
 nav {
-  width: 25%;
+  width: 70%;
   text-align: right;
 }
 
@@ -40,7 +40,7 @@ h1 {
   border: solid 1px black;
   padding: 2% 3%;
   color: black;
-  width: 10vw;
+  width: 20vw;
   margin: 0 auto;
   display: inline-block;
 }
@@ -73,4 +73,35 @@ section img {
 h3 {
   font-size: 18px;
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav a {
+    text-align: center;
+  }
+  main {
+    width: 90vw;
+    margin-top: 5%;
+    height: 47vw;
+    padding: 5vw;
+    box-sizing: border-box;
+  }
+
+  section {
+    width: 90vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  section div {
+    width: 42vw;
+  }
 }
